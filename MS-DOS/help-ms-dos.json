@@ -2,5 +2,9 @@
     "cd": {
         "description": "Allows you to move around your filesystem.",
         "usage": "cd <DIR>"
+    },
+    "cls": {
+        "description": "clears console output",
+        "usage": "cls"
     }
 }
