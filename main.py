@@ -17,5 +17,5 @@ def parser(string):
             print(str(string[2:]))
     except:
         pass
-
+    
 main()
