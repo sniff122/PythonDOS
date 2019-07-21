@@ -12,7 +12,7 @@
         "usage": "exit"
     },
     "echo": {
-        "description": "echo text back to you in colsole",
+        "description": "echoes text back to you in colsole",
         "usage": "echo <text>"
     }
 }
