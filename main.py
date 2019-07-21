@@ -5,18 +5,20 @@ import sys
 import distro
 
 def main():
-    try:
-        os.system('clear')
-        distroname = distro.name()
-        distroversion = distro.version()
-        if distroversion == "":
-            distroversion = "1.2"
-        print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
-        a = input(os.getcwd() + ">")
-        parser(a)
-    except:
-        print('\n')
-        sys.exit(1)
+    while 1:
+        try:
+            os.system('clear')
+            distroname = distro.name()
+            distroversion = distro.version()
+            if distroversion == "":
+                distroversion = "1.2"
+            print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
+            a = input(os.getcwd() + ">")
+            parser(a)
+        except:
+            break
+            print('\n')
+            sys.exit(1)
     
 
 def parser(string):
@@ -24,7 +26,7 @@ def parser(string):
         string = str(string).split(" ")
         if string[0] == 'echo':
             arg = str(' '.join(string))
-            print(str(arg[len(string[0]):]))
+            print(str(arg[len(string[0]) + 1:]))
     except:
         pass
     
