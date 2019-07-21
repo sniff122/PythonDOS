@@ -51,9 +51,9 @@ def parser(string):
         pass
         return False
 
-def checkcommand(string):
+def checkcommand(string, num):
     try:
-        string[1]
+        string[int(num)]
         return True
     except:
         return False
