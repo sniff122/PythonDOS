@@ -5,14 +5,14 @@ import sys
 import distro
 
 def main():
+    os.system('clear')
+    distroname = distro.name()
+    distroversion = distro.version()
+    if distroversion == "":
+        distroversion = "1.2"
+    print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
     while 1:
         try:
-            os.system('clear')
-            distroname = distro.name()
-            distroversion = distro.version()
-            if distroversion == "":
-                distroversion = "1.2"
-            print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
             a = input(os.getcwd() + ">")
             parser(a)
         except:
