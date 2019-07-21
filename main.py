@@ -6,4 +6,3 @@ command_dir = os.getcwd() + "\MS-DOS"
 
 def main():
     parse = argparse.ArgumentParser()
-    
