@@ -46,7 +46,7 @@ def parser(string):
             return False
         elif string[0] == 'exit':
             return True
-        elif string[0] == 'ls':
+        elif string[0] == 'dir':
             listfile = os.listdir(os.getcwd())
             for i in listfile:
                 print(i)
