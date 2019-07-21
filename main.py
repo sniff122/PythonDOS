@@ -15,8 +15,10 @@ def main():
     while 1:
         try:
             a = input(os.getcwd() + "/>")
-            a = parser(a)
-            if a:
+            b = parser(a)
+            if a == 'cmd':
+                print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
+            if b:
                 print('\n')
                 sys.exit(1)
                 break
