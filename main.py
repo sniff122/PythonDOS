@@ -5,4 +5,13 @@ import sys
 command_dir = os.getcwd() + "\MS-DOS"
 
 def main():
-    parse = argparse.ArgumentParser()
+    
+
+def parser(string):
+    try:
+        string = str(string).split(" ")
+        if string[0] == 'cd':
+            print(str(''.join(string)).replace('cd', '')
+    except:
+        pass
+    
