@@ -51,6 +51,8 @@ def parser(string):
             for i in listfile:
                 print(i)
             return False
+        elif string[0] == 'cmd':
+            return False
         else:
             print("'{}' is not recognized as an internal or externel command,\noperable program or batch file\n".format(str(string[0])))
             return False
