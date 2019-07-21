@@ -14,7 +14,11 @@ def main():
     while 1:
         try:
             a = input(os.getcwd() + ">")
-            parser(a)
+            a = parser(a)
+            if a:
+                break
+                print('\n')
+                sys.exit(1)
         except:
             break
             print('\n')
@@ -27,16 +31,20 @@ def parser(string):
         if string[0] == 'echo':
             arg = str(' '.join(string))
             print(str(arg[len(string[0]) + 1:]))
+            return False
         elif string[0] == 'cls':
             os.system('clear')
+            return False
         elif string[0] == 'help':
             print("cls help echo exit")
+            return False
         elif string[0] == 'exit':
-            print('\n')
-            sys.exit(2)
+            return True
         else:
             print("'{}' is not recognized as an internal or externel command,\noperable program or batch file\n".format(str(string[0])))
+            return False
     except:
         pass
+        return False
     
 main()
