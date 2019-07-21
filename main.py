@@ -11,7 +11,8 @@ def parser(string):
     try:
         string = str(string).split(" ")
         if string[0] == 'cd':
-            print(str(''.join(string)).replace('cd', '')
+            string = str(''.join(string))
+            print(str(string[1:]))
     except:
         pass
     
