@@ -37,7 +37,7 @@ def parser(string):
             os.system('clear')
             return False
         elif string[0] == 'help':
-            if checkcommand(string):
+            if checkcommand(string, 1):
                 help(string[1])
             else:
                 print("cls help echo exit")
