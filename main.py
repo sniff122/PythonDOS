@@ -14,7 +14,7 @@ def parser(string):
         string = str(string).split(" ")
         if string[0] == 'echo':
             string = str(''.join(string))
-            print(str(string[4:]))
+            print(str(string[len(string):]))
     except:
         pass
     
