@@ -5,6 +5,7 @@ import distro
 
 def main():
     try:
+        os.system('clear')
         distroname = distro.name()
         distroversion = distro.version()
         if distroversion == "":
