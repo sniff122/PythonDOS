@@ -10,7 +10,7 @@ def main():
     distroname = distro.name()
     distroversion = distro.version()
     if distroversion == "":
-        distroversion = "1.2"
+        distroversion = "1.0"
     print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
     while 1:
         try:
