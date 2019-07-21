@@ -3,6 +3,10 @@ import os
 import argparse
 import sys
 import distro
+import json
+
+with open("help-ms-dos.json", "r") as f:
+    commands_help = json.load(f)
 
 def main():
     os.system('clear')
