@@ -3,8 +3,6 @@ import argparse
 import sys
 import distro
 
-command_dir = os.getcwd() + "\MS-DOS"
-
 def main():
     distroname = distro.name()
     distroversion = distro.version()
