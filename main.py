@@ -14,7 +14,8 @@ def parser(string):
         string = str(string).split(" ")
         if string[0] == 'cd':
             string = str(''.join(string))
-            print(str(string[1:]))
+            print(str(string[2:]))
     except:
         pass
-    
+
+main()
