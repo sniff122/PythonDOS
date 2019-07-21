@@ -17,9 +17,9 @@ def main():
             a = input(os.getcwd() + ">")
             a = parser(a)
             if a:
-                break
                 print('\n')
                 sys.exit(1)
+                break
         except:
             break
             print('\n')
