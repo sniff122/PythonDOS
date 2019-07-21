@@ -1,4 +1,6 @@
-"cd" : {
-    "description": "Allows you to move around your filesystem.",
-    "usage": "cd <DIR>"
+{
+    "cd": {
+        "description": "Allows you to move around your filesystem.",
+        "usage": "cd <DIR>"
+    }
 }
