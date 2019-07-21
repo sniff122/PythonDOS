@@ -6,5 +6,9 @@
     "cls": {
         "description": "clears console output",
         "usage": "cls"
+    },
+    "exit": {
+        "description": "exits the console",
+        "usage": "exit"
     }
 }
