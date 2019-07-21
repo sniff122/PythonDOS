@@ -22,7 +22,7 @@ def parser(string):
     try:
         string = str(string).split(" ")
         if string[0] == 'echo':
-            arg = str(''.join(string))
+            arg = str(' '.join(string))
             print(str(arg[len(string[0]):]))
     except:
         pass
