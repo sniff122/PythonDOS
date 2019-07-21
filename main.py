@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import json
 import os
 import argparse
 import sys
@@ -46,5 +47,10 @@ def parser(string):
     except:
         pass
         return False
-    
+
+def help(command):
+    try:
+        read = 
+    except:
+        pass
 main()
