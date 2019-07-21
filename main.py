@@ -44,6 +44,11 @@ def parser(string):
             return False
         elif string[0] == 'exit':
             return True
+        elif string[0] == 'ls':
+            listfile = os.listdir(os.getcwd())
+            for i in listfile:
+                print(i)
+            return False
         else:
             print("'{}' is not recognized as an internal or externel command,\noperable program or batch file\n".format(str(string[0])))
             return False
