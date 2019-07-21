@@ -14,7 +14,7 @@ def main():
     print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
     while 1:
         try:
-            a = input(os.getcwd() + ">")
+            a = input(os.getcwd() + "/>")
             a = parser(a)
             if a:
                 print('\n')
