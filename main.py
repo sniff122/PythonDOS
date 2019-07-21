@@ -5,6 +5,8 @@ import sys
 command_dir = os.getcwd() + "\MS-DOS"
 
 def main():
+    distro = "Arch Linux"
+    print(distro + " [Version 1.0]\n(c) 2019 " + distro + ". All right reserved.\n")
     a = input(os.getcwd() + ">")
     parser(a)
     
