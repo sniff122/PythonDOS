@@ -14,6 +14,7 @@ def main():
         a = input(os.getcwd() + ">")
         parser(a)
     except:
+        print('\n')
         sys.exit(1)
     
 
