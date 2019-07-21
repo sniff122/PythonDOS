@@ -1,12 +1,14 @@
 import os
 import argparse
 import sys
+import distro
 
 command_dir = os.getcwd() + "\MS-DOS"
 
 def main():
-    distro = "Arch Linux"
-    print(distro + " [Version 1.0]\n(c) 2019 " + distro + ". All right reserved.\n")
+    distroname = distro.name()
+    distroversion = distro.version()
+    print(distroname + " [Version {}]\n(c) 2019 " + distroname + ". All right reserved.\n".format(distroversion))
     a = input(os.getcwd() + ">")
     parser(a)
     
