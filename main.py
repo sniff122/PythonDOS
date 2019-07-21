@@ -27,6 +27,8 @@ def parser(string):
         if string[0] == 'echo':
             arg = str(' '.join(string))
             print(str(arg[len(string[0]) + 1:]))
+        else:
+            print("'{}' is not recognized as an internal or externel command,\noperable program or batch file\n".format(str(string).split(' ')[0]))
     except:
         pass
     
