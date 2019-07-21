@@ -32,6 +32,7 @@ def parser(string):
         elif string[0] == 'help':
             print("cls help echo exit")
         elif string[0] == 'exit':
+            print('\n')
             sys.exit(2)
         else:
             print("'{}' is not recognized as an internal or externel command,\noperable program or batch file\n".format(str(string[0])))
