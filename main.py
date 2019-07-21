@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-import json
 import os
 import argparse
 import sys
 import distro
 import json
-
-with open("help-ms-dos.json", "r") as f:
-    commands_help = json.load(f)
 
 def main():
     os.system('clear')
@@ -41,7 +37,10 @@ def parser(string):
             os.system('clear')
             return False
         elif string[0] == 'help':
-            print("cls help echo exit")
+            if checkcommand(string):
+                help(string[1])
+            else:
+                print("cls help echo exit")
             return False
         elif string[0] == 'exit':
             return True
@@ -52,9 +51,20 @@ def parser(string):
         pass
         return False
 
+def checkcommand(string):
+    try:
+        string[1]
+        return True
+    except:
+        return False
+
 def help(command):
     try:
-        read = 
+        read = open('MS-DOS/help-ms-dos.json', 'r')
+        data = json.load(read)
+        data[command]
+        print(data[command]['description'])
+        print(data[command]['usage'])
     except:
         pass
 main()
