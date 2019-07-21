@@ -18,3 +18,4 @@ def parser(string):
     except:
         pass
     
+main()
