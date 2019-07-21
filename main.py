@@ -5,6 +5,8 @@ import sys
 command_dir = os.getcwd() + "\MS-DOS"
 
 def main():
+    a = input(os.getcwd() + ">")
+    parser(a)
     
 
 def parser(string):
