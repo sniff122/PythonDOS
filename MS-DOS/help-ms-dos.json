@@ -14,5 +14,9 @@
     "echo": {
         "description": "echoes text back to you in colsole",
         "usage": "echo <text>"
+    },
+    "ls": {
+        "description": "see all file in a folder",
+        "usage": "ls"
     }
 }
