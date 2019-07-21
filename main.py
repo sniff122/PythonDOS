@@ -4,11 +4,16 @@ import sys
 import distro
 
 def main():
-    distroname = distro.name()
-    distroversion = distro.version()
-    print(distroname + " [Version {}]\n(c) 2019 " + distroname + ". All right reserved.\n".format(distroversion))
-    a = input(os.getcwd() + ">")
-    parser(a)
+    try:
+        distroname = distro.name()
+        distroversion = distro.version()
+        if distroversion == "":
+            distroversion = "1.0"
+        print("{} [Version {}]\n(c) 2019 {}. All right reserved.\n".format(distroname, distroversion, distroname))
+        a = input(os.getcwd() + ">")
+        parser(a)
+    except:
+        sys.exit(1)
     
 
 def parser(string):
