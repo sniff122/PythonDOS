@@ -5,6 +5,26 @@ import sys
 import distro
 import json
 
+class CD():
+    
+    @staticmethod
+    def back_path():
+        a = os.getcwd()
+        b = str(a).split('/')
+        c = len(b) - 1
+        d = len(b[c])
+        e = len(a) - d - 1
+        f = a[:e]
+        os.chdir(f)
+
+    @staticmethod
+    def set_path(path):
+        try:
+            os.chdir(path)
+            return True
+        except:
+            return False
+
 def main():
     os.system('clear')
     distroname = distro.name()
@@ -36,7 +56,11 @@ def parser(string):
             print(str(arg[len(string[0]) + 1:]))
             return False
         elif string[0] == 'cd':
-
+            a = string[1]
+            if a == '..':
+                CD.back_path()
+            else:
+                CD.set_path(a)
         elif string[0] == 'cls':
             os.system('clear')
             return False
