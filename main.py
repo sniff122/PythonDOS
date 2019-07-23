@@ -35,6 +35,8 @@ def parser(string):
             arg = str(' '.join(string))
             print(str(arg[len(string[0]) + 1:]))
             return False
+        elif string[0] == 'cd':
+
         elif string[0] == 'cls':
             os.system('clear')
             return False
