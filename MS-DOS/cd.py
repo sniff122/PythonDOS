@@ -8,8 +8,8 @@ class CD():
         b = str(a).split('/')
         c = len(b) - 1
         d = len(b[c])
-        e = len(a) - d
-        f = a[:e - 1]
+        e = len(a) - d - 1
+        f = a[:e]
         os.chdir(f)
 
     @staticmethod
